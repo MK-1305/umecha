@@ -10,6 +10,9 @@
     overflow: hidden;
     // ヘッダーの高さ分、コンテンツを下げる
     padding-top: 80px;
+    @media (max-width: 767px) {
+      padding-top: 60px;
+    }
   }
 
   .l-hd {
@@ -30,11 +33,19 @@
     background-color: #fff;
     z-index: 1;
     position: relative;
+    box-shadow: 0 0 10px #00000080;
+    @media (max-width: 767px) {
+      padding-left: 30px;
+      height: 60px;
+    }
   }
   /*                header
 ======================================================= */
   .p-hd__nav {
     height: 100%;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   .p-hd__list {
     display: flex;

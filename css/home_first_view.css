@@ -32,6 +32,11 @@
   overflow: hidden;
   padding-top: 80px;
 }
+@media (max-width: 767px) {
+  .l-wrapper {
+    padding-top: 60px;
+  }
+}
 
 .l-hd {
   position: fixed;
@@ -51,12 +56,24 @@
   background-color: #fff;
   z-index: 1;
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5019607843);
+}
+@media (max-width: 767px) {
+  .p-hd {
+    padding-left: 30px;
+    height: 60px;
+  }
 }
 
 /*                header
 ======================================================= */
 .p-hd__nav {
   height: 100%;
+}
+@media (max-width: 767px) {
+  .p-hd__nav {
+    display: none;
+  }
 }
 
 .p-hd__list {
