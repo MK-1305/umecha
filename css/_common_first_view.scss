@@ -8,6 +8,16 @@
   .l-wrapper {
     // overflow=はみ出した分をどうするか
     overflow: hidden;
+    // ヘッダーの高さ分、コンテンツを下げる
+    padding-top: 80px;
+  }
+
+  .l-hd {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 
   .p-hd {
