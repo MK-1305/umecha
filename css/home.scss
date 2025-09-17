@@ -23,8 +23,88 @@
 
 .p-section {
   padding: 0 50px;
+  // .p-section--gallery
+  &--gallery {
+    margin-top: 165px;
+  }
+  // .p-section--sns
+  &--sns {
+    margin-top: 65px;
+  }
+  // .p-section--map
+  &--map {
+    margin-top: 50px;
+  }
 }
 
 .p-message-text {
   margin-top: 38px;
+}
+
+.p-owner-introduction {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 40px;
+}
+
+.p-owner-introduction__img {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 300px;
+  margin: auto;
+}
+
+/*                shop info
+======================================================= */
+
+.p-sns-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 30px;
+  width: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  .p-sns-icons__item {
+    top: 0;
+    position: relative;
+    transition: top 0.2s ease;
+    &:hover {
+      top: -4px;
+    }
+  }
+}
+
+.p-gmap {
+  border-style: none;
+  width: 100%;
+  height: 480px;
+}
+
+/*                reserve 予約
+======================================================= */
+
+.p-reserve-text {
+  margin-top: 38px;
+}
+
+.p-mail-info {
+  margin-top: 46px;
+}
+
+.p-phone-info {
+  text-align: center;
+  margin-top: 46px;
+}
+
+.p-phone-info__txt {
+  font-weight: bold;
+}
+
+.p-phone-info__num {
+  // aタグはインライン要素なのでblock要素に変更（aタグのままだとクリックできる範囲がとても狭いしwidthなどが効かない）
+  display: block;
+  font-weight: bold;
+  font-size: 40px;
 }

@@ -40,7 +40,31 @@
   }
 }
 
+.c-info-table {
+  margin-top: 30px;
+}
 
+.c-info-table__dl {
+  display: flex;
+  border-top: solid 1px #415069;
+  &:last-child {
+    border-bottom: solid 1px #415069;
+  }
+}
+
+.c-info-table__dt {
+  width: 120px;
+}
+
+.c-info-table__dd {
+  width: calc(100% - 120px);
+}
+
+.c-info-table__dt,
+.c-info-table__dd {
+  padding: 20px 0 18px;
+  line-height: 2;
+}
 
 /*                テキスト装飾
 ======================================================= */
@@ -98,3 +122,29 @@
   }
 
 }//@mixin common
+
+// メールボタン
+.c-link-btn {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 0;
+  font-weight: bold;
+  &:link {
+    color: $siteColor;
+  }
+  @media (min-width: 768px) {
+    &:link {
+      transition: background 0.85s;
+    }
+    &:hover {
+      background: $orange;
+      color: #fff;
+      transition: background 0.9s ease;
+    }
+  }
+}
