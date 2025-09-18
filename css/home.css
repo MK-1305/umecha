@@ -24,6 +24,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .u-sp-br {
+    display: block;
+  }
+}
+
 /*                共通
 ======================================================= */
 /*                reset
@@ -134,11 +140,23 @@ a {
   line-height: 1.5;
   letter-spacing: 0.1em;
 }
+@media (max-width: 767px) {
+  .c-section-title {
+    font-size: 30px;
+    line-height: 1.7;
+  }
+}
 
 /*                テキスト装飾
 ======================================================= */
 .c-section-text {
-  line-height: 40px;
+  line-height: 2.6;
+}
+@media (max-width: 767px) {
+  .c-section-text {
+    font-size: 14px;
+    line-height: 2.4;
+  }
 }
 
 /*                本文テキスト
@@ -151,6 +169,11 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 20px;
+}
+@media (max-width: 767px) {
+  .c-grid-images {
+    gap: 18px 8px;
+  }
 }
 
 .c-grid-images__item--grid-large {
@@ -277,12 +300,28 @@ html.is-fixed {
 .l-section {
   padding-top: 180px;
 }
+@media (max-width: 767px) {
+  .l-section {
+    padding-top: 100px;
+  }
+}
 
 .p-section {
   padding: 0 50px;
 }
+@media (max-width: 767px) {
+  .p-section {
+    padding: 0 38px;
+  }
+}
 .p-section--gallery {
   margin-top: 165px;
+}
+@media (max-width: 767px) {
+  .p-section--gallery {
+    margin-top: 88px;
+    padding: 0;
+  }
 }
 .p-section--sns {
   margin-top: 65px;

@@ -19,13 +19,23 @@
 
 .l-section {
   padding-top: 180px;
+  @media (max-width: 767px) {
+    padding-top: 100px;
+  }
 }
 
 .p-section {
   padding: 0 50px;
+  @media (max-width: 767px) {
+    padding: 0 38px;
+  }
   // .p-section--gallery
   &--gallery {
     margin-top: 165px;
+    @media (max-width: 767px) {
+      margin-top: 88px;
+      padding: 0;
+    }
   }
   // .p-section--sns
   &--sns {
