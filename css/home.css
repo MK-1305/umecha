@@ -191,6 +191,12 @@ a {
 .c-info-table__dl:last-child {
   border-bottom: solid 1px #415069;
 }
+@media (max-width: 767px) {
+  .c-info-table__dl {
+    flex-direction: column;
+    padding: 24px 0 14px;
+  }
+}
 
 .c-info-table__dt {
   width: 120px;
@@ -340,12 +346,33 @@ html.is-fixed {
   grid-template-columns: repeat(2, 1fr);
   gap: 0 40px;
 }
+@media (max-width: 767px) {
+  .p-owner-introduction {
+    grid-template-columns: 1fr;
+    gap: 38px 0;
+    margin-top: 40px;
+  }
+}
 
 .p-owner-introduction__img {
   border-radius: 50%;
   overflow: hidden;
   max-width: 300px;
   margin: auto;
+}
+@media (max-width: 767px) {
+  .p-owner-introduction__img {
+    max-width: 200px;
+  }
+}
+
+.p-owner-introduction__text {
+  margin-top: 52px;
+}
+@media (max-width: 767px) {
+  .p-owner-introduction__text {
+    margin-top: 30px;
+  }
 }
 
 /*                shop info

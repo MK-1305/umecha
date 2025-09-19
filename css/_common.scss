@@ -61,6 +61,10 @@
   &:last-child {
     border-bottom: solid 1px #415069;
   }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 24px 0 14px;
+  }
 }
 
 .c-info-table__dt {

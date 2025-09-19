@@ -153,6 +153,16 @@
   top: 16px;
 }
 
+.is-active .p-sp-menu-btn__border--01 {
+  transform: translateY(10px) rotate(45deg);
+}
+.is-active .p-sp-menu-btn__border--02 {
+  opacity: 0;
+}
+.is-active .p-sp-menu-btn__border--03 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 .l-sp-menu {
   position: fixed;
   top: 0;

@@ -117,10 +117,25 @@
       top: 16px;
     }
   }
-  .l-sp-menu {
-    @media (min-width: 768px) {
-      display: none;
+
+  .is-active {
+    .p-sp-menu-btn__border {
+      // p-sp-menu-btn__border--01
+      &--01 {
+        transform: translateY(10px) rotate(45deg);
+      }
+      // p-sp-menu-btn__border--02
+      &--02 {
+        opacity: 0;
+      }
+      // p-sp-menu-btn__border--03
+      &--03 {
+        transform: translateY(-6px) rotate(-45deg);
+      }
     }
+  }
+
+  .l-sp-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -129,6 +144,10 @@
     width: 100vw;
     opacity: 0;
     pointer-events: none;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
   .p-sp-menu {
     height: 100%;
